@@ -1,14 +1,178 @@
 <!doctype html>
 
-<html>
-  <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
+<html lang="en">
 
-  <body>
-    <!-- TODO: put your HTML code here! -->
-  </body>
+<head>
+  <title>Redesign Project</title>
+
+  <!-- Bootstrap CSS from online quickstart-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="index.css">
+  <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+  <!-- TODO: put your HTML code here! -->
+
+  <div class="jumbotron text-center">
+    <h1>An Exercise in Redesign</h1>
+  </div>
+
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#OldBgo">Chosen Website</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Prototyping">Prototyping</a></li>
+        <li class="nav-item"><a class="nav-link" href="#BgoSite">Product</a></li>     
+      </ul>
+    </div>  
+  </nav>
+
+  <!-- <div class="mainbody container-fluid"> -->
+
+    <div class="Content container-fluid" id="About">
+      <div class="section row">
+        <h1>About</h1>
+        <div class="p">
+          This project is an exercise in implementing the elements of good design
+          I have learned thus far. A public website was chosen from a small local 
+          business to be redesigned. This website was examined in regards usability, 
+          responsiveness, and accessibility.
+          Afterwards, I underwent a process of prototyping my intended design 
+          to demonstrate areas I think could be improved and how to improve them.
+          A semi-functional final website was produced as the final product.
+          <br>
+          I hope you enjoy reading it; a lot of love was put into this piece. &#128522;
+        </div>
+      </div>
+    </div>
+
+    <div class="Content container-fluid" id="OldBgo">
+      <div class="section row">
+        <h1>Chosen Website</h1>
+        <div class="p">
+          I chose the menu page of Bagel Gourmet Cafe, a small restaurant in 
+          Providence Rhode Island, that truly does sell tasty bagels.
+          Below, I have attached a screenshot from the webpage.
+        </div>
+      </div>
+      
+      <div class="section row">
+        <div class="imgwrapper">
+          <img src="bgo menu page screenshot.jpg" id="oldpage" alt="Screenshot of BGO menu page">
+        </div> 
+      </div>
+
+      <div class="section row">
+        <h2>Analysis</h2>
+        <div class="p">
+          Below is a brief summary of design problems I discovered from interacting
+          with the website:
+        </div>
+      </div>
+      
+      <div class="section row">
+        <div class="probsection col">
+          <h3>Usability</h3>
+          <ul class="problems">
+            <li>Lots of distracting elements</li>
+            <li>Color contrast hinders readability</li>
+            <li>Unclear structuring/hierarchy of items and categories</li>
+          </ul>
+        </div>
+
+        <div class="probsection col">
+          <h3>Learnability</h3>
+          <ul class="problems">
+            <li>Unclear that "shopping cart" means make an order</li>
+            <li>Unclear when something is a link and when it is not 
+              - use of blue hyperlink color and underline for non-link texts also</li>
+            <li>Confusing logic behind font sizes and color for different
+              categories (food items, options, add-ons)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section row">
+        <div class="probsection col">
+          <h3>Memorability</h3>
+          <ul class="problems">
+            <li>No directory 
+              - forces you to memorize order of menu categories and items</li>
+            <li>Lack of order in format forces you to memorize/re-learn 
+              format of where prices are found for each item
+            </li>
+            <li>No reasonable order of the categories on the menu 
+              - salads are next to hamburgers and 
+              beverages are between sandwiches and mexican food</li>
+          </ul>
+        </div>
+
+        <div class="probsection col">
+          <h3>Efficiency</h3>
+          <ul class="problems">
+            <li>Extremely long page that fails to utilize horizontal space
+              in order to allow for more efficient scanning
+            </li>
+            <li>Only method to move around page is to scroll 
+              - no opportunity to increase efficiency in navigation</li>
+            <li>Prices not aligned so reading speed is hindered</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section row">
+        <h2>Accessibility</h2>
+        <div class="p">
+          Furthermore, there are multiple accessibility concerns that result
+          from examinig this website.
+          <br><br>
+          The WebAIM WAVE tool revealed that there are missing page titles
+          and headers, along with unclear page regions, 
+          which make the website difficult to navigate.
+          There is also no language preset, which allows webpages to load
+          faster and helps search engines properly categorize it.
+          The text is also quite small and many areas of text contrast 
+          poorly with the background color, which greatly hinder readability.
+          <br><br>
+          After using a screenreader on this website, I noticed that many 
+          things do not have descriptors and make it difficult to navigate.
+          For example, the contact information (address and phone number) 
+          are written without descriptors, so it is difficult to know both
+          that the screenreader is beginning to read an address and to tell 
+          where the end of the zip code and the beginning of the phone number is.
+          There are also asterisks in random places to denote emphasis on 
+          a seemingly arbitrary set of items, and there is no alternative 
+          texts for images.
+        </div>
+      </div>
+    </div>
+
+    <div class="note">
+      <div class="p">
+        I also found it a bit humorous that the "We" in the upperleft
+        image is actually text and not a glitch in the image, which 
+        the screenreader revealed while reading the page.
+        This would undoubtedly lead to even more confusion!
+      </div>
+    </div>
+
+  <!-- </div> -->
+
+
+  <footer>Made for CSUIUX</footer>
+
+</body>
+
 </html>

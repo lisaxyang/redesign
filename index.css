@@ -1,1 +1,76 @@
 /* Put your style information here! */
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #eeeeee; */
+}   
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.mainbody {
+    max-width: 950px;
+    padding: 0 5rem 0 5rem;
+    background-color: white;
+}
+
+.Content {
+    max-width: 950px;
+    padding-top: 2rem;
+    border-bottom: 1px solid #343a40;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.section {
+    justify-content: center;
+}
+
+nav .navbar-nav li a{
+    color: white !important;
+}
+
+.p, .problems {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+.imgwrapper {
+    padding-bottom: 1rem;
+}
+
+#OldBgo {
+    background-color: #eeeeee;
+}
+
+#oldpage {
+    max-width: 650px;
+    padding: 0.25rem;
+    border: 5px solid #343a40;
+}
+
+.probsection {
+    background-color: white;
+    margin: 0.5rem;
+}
+
+.note {
+    background-color: yellow;
+}
+
+footer {
+    text-align: right;
+    padding-right: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
