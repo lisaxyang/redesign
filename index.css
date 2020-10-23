@@ -32,6 +32,21 @@ body {
     justify-content: center;
 }
 
+.note {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.pnote {
+    background-color: lemonchiffon;
+    max-width: 300px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
 nav .navbar-nav li a{
     color: white !important;
 }
@@ -49,7 +64,7 @@ h2 {
     padding-bottom: 1rem;
 }
 
-#OldBgo {
+#OldBgo, #Product {
     background-color: #eeeeee;
 }
 
@@ -64,9 +79,7 @@ h2 {
     margin: 0.5rem;
 }
 
-.note {
-    background-color: yellow;
-}
+
 
 footer {
     text-align: right;
