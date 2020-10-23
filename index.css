@@ -60,6 +60,10 @@ h2 {
     padding-top: 2rem;
 }
 
+img {
+    border: 5px solid #343a40;
+}
+
 .imgwrapper {
     padding-bottom: 1rem;
 }
@@ -71,7 +75,15 @@ h2 {
 #oldpage {
     max-width: 650px;
     padding: 0.25rem;
-    border: 5px solid #343a40;
+}
+
+.prototype {
+    max-width: 850px;
+    padding: 0.25rem
+}
+
+#styleguide {
+    max-width: 850px;
 }
 
 .probsection {
