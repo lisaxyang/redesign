@@ -47,6 +47,15 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.comment {
+    background-color: lemonchiffon;
+    max-width: 650px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
 nav .navbar-nav li a{
     color: white !important;
 }
@@ -91,11 +100,12 @@ img {
     margin: 0.5rem;
 }
 
-
+#finishedproduct {
+    padding-top: 2rem;
+}
 
 footer {
     text-align: right;
-    padding-right: 15px;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
 }

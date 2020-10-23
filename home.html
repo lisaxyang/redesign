@@ -219,16 +219,130 @@
           <img src="style guide illustrator-01.jpg" id="styleguide" alt="Style Guide for BGO Menu Page">
         </div> 
       </div>
+
+      <div class="note row">
+        <div class="comment">
+          Comment: I found that while I was prototyping and creating the 
+          style guide, that my style choices were fluid and continued to change.
+          This is also evident in my final product.
+          <br>
+          For example, I alternated between putting the photo menu on the 
+          right side of the screen versus putting it at the bottom of 
+          the screen for tablet mode.
+          <br>
+          I found prototyping very helpful in giving me the space to think through
+          multiple versions of the design, so that when I was actually building 
+          the website I had backup plans in case the Plan Adid not 
+          turn out as expected.
+        </div>
+      </div>
     </div>
 
     <div class="Content container-fluid" id="Product">
       <div class="section row">
         <h1>Product</h1>
-        <div class="p">
+      </div>
 
+      <div class="section row">
+        <div class="p" id="finishedproduct">
+          And without further ado: 
+          <a href="https://enigmatic-wildwood-19691.herokuapp.com/" 
+          target="_blank">the finished product. </a>
+        </div>
+      </div>
+
+      <div class="section row">
+        <h2>Comments</h2>
+        <div class="p">
+          Like I mentioned earlier, there were some changes made to my 
+          final design while I was implementing it.
+          <br><br>
+          First of all, I chose to have a dropdown button for the directory 
+          instead of putting it inside the navbar. I did this because it 
+          allowed me the flexibility of displaying it only on certain 
+          screen sizes, and so that in the navbar users could still click 
+          on menu and be directed to the menu page, instead of only being 
+          able to navigate there through the dropdown menu.
+          <br><br>
+          I also chose to have the photo menu be below the main menu in the iPad 
+          screen, as shown by my tablet low-fi design, because when I was 
+          actually designing the website, it felt a bit cluttered with the 
+          photos on the right column. This was especially true if the 
+          font size was increased.
+          <br><br>
+          Finally, I have a sticky-right side navigation bar, which moves with 
+          you after you scroll down the page. Originally, I only implemented
+          the sticky-right feature. However, when examining the page with 
+          a larger font, the navigation bar did not fit the screen. 
+          Therefore, I researched and implemented a feature to allow the 
+          navigation bar to move to the top of the screen when you scroll down 
+          far enough, allowing it to be fully visible on screens with increased font size.
+        </div>
+      </div>
+
+      <div class="section row">
+        <h2>Accessibility Analysis</h2>
+        <div class="p">
+          One of the goals in redesigning this webpaage was also to make it
+          more accessible. Therefore, I conducted similar tests as I did with 
+          the original webpage to check its accessibility.
+          <br><br>
+          Using the WebAIM WAVE test, I found that there were no errors, while 
+          before there were many errors in multiple categories. The test 
+          did give me a warning about the redundancy of my buttons in the 
+          photo menu to say "Click", but after some deliberation, I decided 
+          to keep this description because there were not that many 
+          buttons on the page, on the desktop site this would be the first button 
+          you encounter, and I personally am not familiar with many similar 
+          interfaces and would appreciate the increased learnability of the button.
+          <br><br>
+          I also conducted tests with increased font sizes and changing the 
+          page language using Google Translate. As a result, I chose to enhance
+          the style of my side navigation bar to accomodate screens with 
+          increased font sizes (as mentioned before) and made sure that any 
+          overflow text as a result was still readable and understandable.
+          When the page was translated in a different language, the structure 
+          and hierarchy of the categories were still clear enough that 
+          I felt I could navigate it reasonably well. I noticed the menu 
+          directory played a large rol in this also, along with the horizontal 
+          line markers
+          <br><br>
+          When I tested my website with a screenreader, I was actually surprised
+          to find the screenreader much more helpful. At first, when I had 
+          used the screenreader for the original website, I thought the 
+          screenreader was simply confusing because it would read random 
+          sections of text, such as only "de gallo" in a description that 
+          contained "pico de gallo". However, when I used the screenreader on 
+          my website, I found that it read the website in logical chunks, 
+          likely separated by my div markers. For example, it now read the 
+          entire description of ingredients, instead of just "de gallo", and 
+          also read the prices associated with each size together.
+          The design of this website therefore not only increases visual 
+          readability, but its structure also enhances readability for 
+          screenreaders
         </div>
       </div>
     </div>
+
+    <div class="Content container-fluid" id="Conclusion">
+      <div class="section row">
+        <h1>Conclusion</h1>
+        <div class="p">
+          I had a really fun time working on a redesign for a public website. 
+          I think I was able to learn a lot from prototyping and from 
+          creating a style guide. Along the way, I noticed that each  
+          step was instrumental in preparing me for the next part.
+          I was also able to have a lot more practice with flexbox 
+          when creating a responsive site, and I worked with JavaScript 
+          and jquery to resolve my side navigation bar issue when the 
+          font sized increased.
+          <br><br>
+          Thank you for reading &#x2764;
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <!-- </div> -->
 
